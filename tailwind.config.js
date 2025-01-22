@@ -9,7 +9,11 @@ export default {
       fontFamily: {
         sans: ["Poppins", "sans-serif"],
       },
-      colors: {},
+      colors: {
+        primary: "#f2f4f3",
+        secondary: "#abc4ab",
+        
+      },
       container: {
         center: true,
         padding: {

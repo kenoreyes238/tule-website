@@ -1,6 +1,8 @@
 // import {useEffect} from "react"
 // import AOS from "aos"
-import Navbar from "./components/Navbar/Navbar"
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
+import Navbar from "./components/Navbar"
+import Home from './pages/Home'
 import "aos/dist/aos.css"
 
 const App = () => {
@@ -14,11 +16,12 @@ const App = () => {
   // })
   return (
     <div className="overflow-x-hidden">
-      <Navbar />
-      {/* <Home /> */}
-      {/* <About /> */}
-      {/* <Menu /> */}
-      {/* <Contact /> */}
+      <Router>
+       <Navbar />
+       <Routes location={location} key={location.pathname}>
+        <Route path="/" element={<Home />}/> 
+       </Routes>  
+      </Router>  
     </div>
   )
 }
