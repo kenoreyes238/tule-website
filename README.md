@@ -1,50 +1,12 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![high resolution file_gold copy](https://github.com/user-attachments/assets/7e689d39-a7dc-41b1-8e99-16134e0578be)
 
-Currently, two official plugins are available:
+# Tule Website (WIP)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This is the source code for the Official Tule Coffee House Website developed by Keno Reyes (I also work there as well)
 
-## Expanding the ESLint configuration
+This site is a static site containing all the business information from the menu, to about the cafe, and a way to contact us directly using the built-in form in the website.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+This is currrently a work in progress. To view wireframes for site, click here to get directed to the Figma page: https://www.figma.com/design/wQxd6xTtyubKPR9jEjXLoa/Tule-Website-Layout-Page?node-id=0-1&t=AxVEdm5NLHQIwDZP-1
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+Developed in TypeScript; utilizes ReactJS, TailwindCSS, backend utilized by Firebase (WIP)
